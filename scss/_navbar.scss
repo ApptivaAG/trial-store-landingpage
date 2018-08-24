@@ -15,7 +15,7 @@
     color: $primary;
     background-color: black;
     padding: 1rem;
-    @include script-font;
+    @include heading-font;
     &.active,
     &:active,
     &:focus,
