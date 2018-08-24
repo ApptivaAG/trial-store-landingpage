@@ -30,7 +30,9 @@
 
   $(".js-location-trigger").click(function() {
     ga("send", "event", "clicks", "locations");
+    $("#map").show("fast");
   });
+  $("#map").hide();
 
   // Activate scrollspy to add active class to navbar items on scroll
   $("body").scrollspy({
