@@ -29,8 +29,7 @@
   });
 
   $(".js-location-trigger").click(function() {
-    window.gtag("send", "event", "clicks", "locations");
-    console.log("locations");
+    ga("send", "event", "clicks", "locations");
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
