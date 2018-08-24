@@ -119,11 +119,23 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   color: black;
+  background-color: black;
+  padding: 1rem;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
   color: black;
+}
+
+#mainNav .navbar-brand .trialstore {
+  color: white;
+  text-transform: uppercase;
+}
+
+#mainNav .navbar-brand .subline {
+  color: white;
+  font-size: 40%;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -200,6 +212,10 @@ header.masthead .intro-text .intro-heading {
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
+  border-color: white;
+  border-width: 0.3rem;
+  border-style: solid;
+  padding: 2rem;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
