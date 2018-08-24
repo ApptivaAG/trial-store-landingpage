@@ -33,6 +33,13 @@
 
   gtag('config', 'UA-124581203-1');
   gtag('send', 'pageview');
+  gtag('send', {
+    hitType: 'event',
+    eventCategory: 'Videos',
+    eventAction: 'play',
+    eventLabel: 'Fall Campaign'
+  });
+
   window.gtag = gtag;
 </script>
 <!-- End Google Analytics -->
