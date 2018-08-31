@@ -45,11 +45,6 @@ section {
     @include serif-font;
   }
 }
-@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
-  }
-}
 
 // Button Styles
 .btn {
