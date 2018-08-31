@@ -41,7 +41,7 @@ section {
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 5rem;
 }
 
 section h3.section-subheading {
@@ -632,6 +632,11 @@ header.masthead .intro-text .intro-subheading {
   margin-top: 0;
 }
 
+#faq {
+  background-color: #e9ecef;
+  color: #212529;
+}
+
 section#contact {
   background-color: #212529;
   background-image: url("../img/map-image.png");
@@ -692,6 +697,8 @@ section#contact :-ms-input-placeholder {
 }
 
 footer {
+  background-color: #212529;
+  color: #f8f9fa;
   padding: 25px 0;
   text-align: center;
 }
