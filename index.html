@@ -48,7 +48,7 @@
         <div class="trialstore">Trial Store</div>
         <div class="subline">by GLOBUS</div>
       </div>
-      <a class="nav-locations btn-xl text-uppercase js-location-trigger" href="#services">Standorte</a>
+      <a class="nav-locations btn-xl text-uppercase js-location-trigger" href="#locations">Standorte</a>
 
     </div>
   </nav>
@@ -64,7 +64,7 @@
   </header>
 
   <!-- How it works -->
-  <section id="services">
+  <section id="howitworks">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -74,8 +74,8 @@
       <div id="steps" class="row text-center">
         <div class="col-md-4">
           <img src="/img/Eins.png" />
-          <p class="text-muted">Für eine Gebühr von 25% des Preises kannst du fast jeden Artikel von Globus ausleihen und
-            gleich mit nach Hause nehmen.</p>
+          <p class="text-muted">Für eine Gebühr von 25% des Preises kannst du Artikel von Globus ausleihen und gleich mit
+            nach Hause nehmen.</p>
         </div>
         <div class="col-md-4">
           <img src="/img/Zwei.png" />
@@ -95,14 +95,38 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <a class="btn btn-primary btn-xl text-uppercase js-location-trigger" href="#map">Standorte anzeigen</a>
+          <h2 class="section-heading text-uppercase">Standorte</h2>
         </div>
       </div>
-      <div id="map" class="row">
+      <div class="row">
+        <div class="col-lg-4 text-center">
+          <a class="btn btn-primary btn-xl js-location-pfingstweidstrasse" href="#map">Zürich, Pfingstweidstrasse</a>
+        </div>
+        <div class="col-lg-4 text-center">
+          <a class="btn btn-primary btn-xl js-location-multergasse" href="#map">St. Gallen, Multergasse</a>
+        </div>
+        <div class="col-lg-4 text-center">
+          <a class="btn btn-primary btn-xl js-location-vaadianstrasse" href="#map">St. Gallen, Vaadianstrasse</a>
+        </div>
+      </div>
+
+      <div id="mapCollab" class="row">
+        <iframe title="Google Maps" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=TrialStore,Pfingstweidstrasse 10, 8005 Zürich&amp;hl=de&amp;geocode=+&amp;hnear=Pfingstweidstrasse 10+Zürich&amp;t=m&amp;z=17&amp;iwloc=A&amp;output=embed"
+          data-reactid="358" width="100%" height="550px" frameborder="0">
+        </iframe>
+      </div>
+
+      <div id="mapMulter" class="row">
         <iframe title="Google Maps" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=GLOBUS,
-        Multergasse 47, 9000 St. Gallen&amp;hl=de&amp;geocode=+&amp;hnear=GLOBUS+Multergasse 47,+St. Gallen&amp;t=m&amp;z=17&amp;iwloc=A&amp;output=embed"
+          Multergasse 47, 9000 St. Gallen&amp;hl=de&amp;geocode=+&amp;hnear=GLOBUS+Multergasse 47,+St. Gallen&amp;t=m&amp;z=17&amp;iwloc=A&amp;output=embed"
           data-reactid="358" width="100%" height="550px" frameborder="0"></iframe>
       </div>
+
+      <div id="mapVaadian" class="row">
+        <iframe id="mapVaadian" title="Google Maps" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=GLOBUS,Vaadianstrasse 11, 9000 St. Gallen&amp;hl=de&amp;geocode=+&amp;hnear=GLOBUS+Vaadianstrasse 11+St. Gallen&amp;t=m&amp;z=17&amp;iwloc=A&amp;output=embed"
+          data-reactid="358" width="100%" height="550px" frameborder="0"></iframe>
+      </div>
+    </div>
     </div>
   </section>
 

@@ -28,11 +28,40 @@
     $(".navbar-collapse").collapse("hide");
   });
 
-  $(".js-location-trigger").click(function() {
-    ga("send", "event", "clicks", "locations");
+  var jsLocation = function(url) {
+    $("#mapiframe").attr("src", url);
     $("#map").show("fast");
+    ga("send", "event", "clicks", "locations");
+  };
+
+  $(".js-location-pfingstweidstrasse").click(function() {
+    // Pfingstweidstrasse 10, 8005 Zürich
+    console.log("collab");
+    $("#mapCollab").show("fast");
+    $("#mapMulter").hide();
+    $("#mapVaadian").hide();
+    ga("send", "event", "clicks", "locations");
   });
-  $("#map").hide();
+
+  $(".js-location-multergasse").click(function() {
+    // Multergasse 74, 9000 St. Gallen
+    $("#mapCollab").hide();
+    $("#mapMulter").show("fast");
+    $("#mapVaadian").hide();
+    ga("send", "event", "clicks", "locations");
+  });
+
+  $(".js-location-vaadianstrasse").click(function() {
+    // Vaadianstrasse 11, 9000 St. Gallen
+    $("#mapCollab").hide();
+    $("#mapMulter").hide();
+    $("#mapVaadian").show("fast");
+    ga("send", "event", "clicks", "locations");
+  });
+
+  $("#mapCollab").hide();
+  $("#mapMulter").hide();
+  $("#mapVaadian").hide();
 
   // Activate scrollspy to add active class to navbar items on scroll
   $("body").scrollspy({
