@@ -34,13 +34,13 @@
     ga("send", "event", "clicks", "locations");
   };
 
-  $(".js-location-pfingstweidstrasse").click(function() {
+  $(".js-location-collab").click(function() {
     // Pfingstweidstrasse 10, 8005 Zürich
     console.log("collab");
     $("#mapCollab").show("fast");
     $("#mapMulter").hide();
     $("#mapVaadian").hide();
-    ga("send", "event", "clicks", "locations");
+    ga("send", "event", "clicks", "collab");
   });
 
   $(".js-location-multergasse").click(function() {
@@ -48,7 +48,7 @@
     $("#mapCollab").hide();
     $("#mapMulter").show("fast");
     $("#mapVaadian").hide();
-    ga("send", "event", "clicks", "locations");
+    ga("send", "event", "clicks", "multergasse");
   });
 
   $(".js-location-vaadianstrasse").click(function() {
@@ -56,7 +56,7 @@
     $("#mapCollab").hide();
     $("#mapMulter").hide();
     $("#mapVaadian").show("fast");
-    ga("send", "event", "clicks", "locations");
+    ga("send", "event", "clicks", "vaadianstrasse");
   });
 
   $("#mapCollab").hide();
