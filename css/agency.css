@@ -266,7 +266,7 @@ header.masthead .intro-text .intro-subheading {
   color: #212529;
 }
 
-#locations .js-location-trigger {
+#locations [class*="js-location-"] {
   margin-bottom: 2em;
 }
 

@@ -1,5 +1,5 @@
 #locations {
-  .js-location-trigger {
+  [class*="js-location-"] {
     margin-bottom: 2em;
   }
 }
