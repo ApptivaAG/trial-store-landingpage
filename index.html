@@ -234,12 +234,50 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
           <span class="copyright">2018 Trial Store by GLOBUS</span>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a data-toggle="modal" data-target="#impressumModal">Impressum</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- Modals -->
+  <!-- Impressum -->
+  <div class="impressum-modal modal fade" id="impressumModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Impressum</h2>
+                <p>Magazine zum Globus AG<br/>Industriestrasse 171<br/>CH-8957 Spreitenbach<br/>Tel. 058 455 21 11<br/>trialstore@globus.ch
+                </p>
+                <p>Firmensitz: 8957 Spreitenbach (AG)<br/>UID-Nummer: CHE-105.839.536 MWST
+                </p>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fa fa-times"></i>
+                  Schliessen</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
