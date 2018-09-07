@@ -40,6 +40,9 @@
     $("#mapCollab").show("fast");
     $("#mapMulter").hide();
     $("#mapVaadian").hide();
+    fbq("track", "ViewContent", {
+      value: collab
+    });
     ga("send", "event", "clicks", "collab");
   });
 
@@ -48,6 +51,9 @@
     $("#mapCollab").hide();
     $("#mapMulter").show("fast");
     $("#mapVaadian").hide();
+    fbq("track", "ViewContent", {
+      value: multergasse
+    });
     ga("send", "event", "clicks", "multergasse");
   });
 
@@ -56,6 +62,9 @@
     $("#mapCollab").hide();
     $("#mapMulter").hide();
     $("#mapVaadian").show("fast");
+    fbq("track", "ViewContent", {
+      value: vaadianstrasse
+    });
     ga("send", "event", "clicks", "vaadianstrasse");
   });
 
