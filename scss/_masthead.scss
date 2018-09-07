@@ -33,7 +33,7 @@ header.masthead {
     }
     .intro-subheading {
       letter-spacing: 0.05em;
-      font-size: 25px;
+      font-size: 30px;
     }
   }
 }
@@ -55,6 +55,9 @@ header.masthead {
         line-height: 75px;
         margin-bottom: 50px;
         @include heading-font;
+      }
+      .intro-subheading {
+        font-size: 40px;
       }
     }
   }

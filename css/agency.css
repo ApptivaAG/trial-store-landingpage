@@ -232,7 +232,7 @@ header.masthead .intro-text .intro-heading {
 
 header.masthead .intro-text .intro-subheading {
   letter-spacing: 0.05em;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 @media (min-width: 768px) {
@@ -253,6 +253,9 @@ header.masthead .intro-text .intro-subheading {
     line-height: 75px;
     margin-bottom: 50px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  header.masthead .intro-text .intro-subheading {
+    font-size: 40px;
   }
 }
 
