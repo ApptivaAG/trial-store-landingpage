@@ -28,11 +28,10 @@
     $(".navbar-collapse").collapse("hide");
   });
 
-  var jsLocation = function(url) {
-    $("#mapiframe").attr("src", url);
-    $("#map").show("fast");
-    ga("send", "event", "clicks", "locations");
-  };
+  $(".lab-button").click(function() {
+    console.log("lab");
+    ga("send", "event", "clicks", "lab");
+  });
 
   $(".js-location-collab").click(function() {
     // Pfingstweidstrasse 10, 8005 Zürich
