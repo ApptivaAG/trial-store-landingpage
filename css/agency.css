@@ -144,6 +144,7 @@ img::-moz-selection {
   text-decoration: none;
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 20px 0px;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
