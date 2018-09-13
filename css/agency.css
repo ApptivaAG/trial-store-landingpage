@@ -419,3 +419,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .quicklinks {
   cursor: pointer;
 }
+
+#lab [class*="col-"] {
+  margin-bottom: 0.5em;
+}
+
+#lab .gutschein {
+  font-weight: bold;
+  color: #d10000;
+}
