@@ -37,6 +37,7 @@
     // Pfingstweidstrasse 10, 8005 Zürich
     console.log("collab");
     $("#mapCollab").show("fast");
+    $("#mapSchweizer").hide();
     $("#mapMulter").hide();
     $("#mapVaadian").hide();
     fbq("track", "ViewContent", {
@@ -45,9 +46,23 @@
     ga("send", "event", "clicks", "collab");
   });
 
+  $(".js-location-schweizergasse").click(function() {
+    // Schweizergasse 11, 8001 Zürich
+    console.log("schweizergasse");
+    $("#mapCollab").hide();
+    $("#mapSchweizer").show("fast");
+    $("#mapMulter").hide();
+    $("#mapVaadian").hide();
+    fbq("track", "ViewContent", {
+      value: "schweizergasse"
+    });
+    ga("send", "event", "clicks", "schweizergasse");
+  });
+
   $(".js-location-multergasse").click(function() {
     // Multergasse 74, 9000 St. Gallen
     $("#mapCollab").hide();
+    $("#mapSchweizer").hide();
     $("#mapMulter").show("fast");
     $("#mapVaadian").hide();
     fbq("track", "ViewContent", {
@@ -59,6 +74,7 @@
   $(".js-location-vaadianstrasse").click(function() {
     // Vaadianstrasse 11, 9000 St. Gallen
     $("#mapCollab").hide();
+    $("#mapSchweizer").hide();
     $("#mapMulter").hide();
     $("#mapVaadian").show("fast");
     fbq("track", "ViewContent", {
@@ -68,6 +84,7 @@
   });
 
   $("#mapCollab").hide();
+  $("#mapSchweizer").hide();
   $("#mapMulter").hide();
   $("#mapVaadian").hide();
 
