@@ -384,3 +384,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   font-weight: bold;
   color: #d10000;
 }
+
+#newsletter label {
+  width: 100%;
+}
