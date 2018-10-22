@@ -388,3 +388,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #newsletter label {
   width: 100%;
 }
+
+.bag-img {
+  height: 10em;
+}
