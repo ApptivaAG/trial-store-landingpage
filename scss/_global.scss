@@ -1,4 +1,8 @@
 // Global styling for this template
+html {
+  font-size: 18px;
+}
+
 body {
   overflow-x: hidden;
   @include body-font;
@@ -33,38 +37,46 @@ section {
   padding: 100px 0;
 
   h2.section-heading {
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 2em;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: $secondary;
+    margin: 0;
+  }
+
+  h3 {
+    color: $gray;
+    font-size: 1em;
+    margin-top: 1.2em;
+  }
+
+  blockquote {
+    font-size: 2em;
+    font-weight: 300;
   }
 
   @media (min-width: 768px) {
-    h2.section-heading {
-      font-size: 40px;
-      margin-top: 0;
-      margin-bottom: 2em;
+    blockquote {
+      font-size: 3em;
     }
   }
 
-  h3.section-subheading {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 75px;
-    text-transform: none;
-    @include serif-font;
+  p {
+    color: $gray;
   }
 }
 
 // Button Styles
 .btn {
   @include heading-font;
-  font-weight: 700;
+  font-weight: 500;
+  border-radius: 0;
+  color: $secondary;
+  text-transform: uppercase;
 }
 
 .btn-xl {
-  font-size: 18px;
-  padding: 20px;
+  font-size: 1.3em;
+  padding: 0.6em 1em;
 }
 
 .btn-primary {
