@@ -21,7 +21,7 @@
     &:active,
     &:focus,
     &:hover {
-      color: darken($primary, 10%);
+      color: $white;
     }
     .trialstore {
       color: white;
@@ -38,6 +38,10 @@
     color: white;
     @include heading-font;
     padding: 20px 0px;
+    &.active,
+    &:hover {
+      color: $white;
+    }
   }
   .navbar-nav {
     .nav-item {
@@ -50,7 +54,7 @@
         @include heading-font;
         &.active,
         &:hover {
-          color: $primary;
+          color: $white;
         }
       }
     }
@@ -92,6 +96,10 @@
       background-color: black;
       .nav-locations {
         color: $secondary;
+        &.active,
+        &:hover {
+          color: $white;
+        }
       }
       .navbar-brand {
         font-size: 1.25em;

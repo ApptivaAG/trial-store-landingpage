@@ -140,7 +140,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: black;
+  color: #fff;
 }
 
 #mainNav .navbar-brand .trialstore {
@@ -161,6 +161,10 @@ img::-moz-selection {
   padding: 20px 0px;
 }
 
+#mainNav .nav-locations.active, #mainNav .nav-locations:hover {
+  color: #fff;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
   font-size: 90%;
   font-weight: 400;
@@ -171,7 +175,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: black;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -208,6 +212,9 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .nav-locations {
     color: #9f8f68;
+  }
+  #mainNav.navbar-shrink .nav-locations.active, #mainNav.navbar-shrink .nav-locations:hover {
+    color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -446,6 +453,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   height: 1em;
   width: 2em;
   margin-left: 1em;
+  stroke: currentColor;
 }
 
 @media (max-width: 991px) {
