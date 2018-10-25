@@ -461,6 +461,8 @@
 
   <script>
     Snipcart.subscribe('cart.opened', function () {
+      Snipcart.unsubscribe('cart.opened');
+
       var html = $('#cart-content-text').html();
       $(html).insertBefore($('#snipcart-footer'));
     });
