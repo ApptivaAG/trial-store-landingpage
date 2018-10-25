@@ -511,3 +511,31 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   padding-left: 2em;
   padding-right: 2em;
 }
+
+div[data-for='province'],
+div[data-for='address2'] {
+  display: none;
+}
+
+#snipcart_custom_Behaltepreise-nach-100-Tagen-zusatzlich {
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  color: gray;
+}
+
+#snipcart-main-content .custom-snipcart-footer-text {
+  padding: 1em;
+}
+
+#snipcart-main-content .custom-snipcart-footer-text h2 {
+  font-size: 2em;
+  color: darkred;
+  margin-bottom: 0.5em;
+}
+
+#snipcart-main-content .custom-snipcart-footer-text p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 1em;
+}

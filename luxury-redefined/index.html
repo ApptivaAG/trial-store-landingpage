@@ -91,6 +91,7 @@
       <a class="nav-locations text-uppercase js-scroll-trigger" href="#bags">Produkte</a>
       <a class="nav-locations text-uppercase js-scroll-trigger" href="#howitworks">So funktionierts</a>
       <a class="nav-locations text-uppercase js-scroll-trigger" href="#locations">Standorte</a>
+      <a href="#" class="snipcart-checkout nav-locations text-uppercase">Warenkorb</a>
     </div>
   </nav>
 
@@ -110,39 +111,43 @@
       </div>
       <div id="product-list" class="row">
         <div class="col-lg-4">
-          <img class="bag-img" src="https://www.globus.ch/media/shop/1636538/1529565400000?v=gallery&width=1000" alt="Shopper Coach Abbildung">
+          <img class="bag-img" src="https://www.globus.ch/media/shop/1636538/1529565400000?v=gallery&width=600" alt="Shopper Coach Abbildung">
           <h3>Shopper von COACH </h3>
-          <p>CHF 349.90</p>
+          <p>CHF 87.50</p>
           <p>Size: One size</p>
           <p>Farbe: blauschwarz</p>
           <button class="snipcart-add-item btn btn-primary " data-item-id="2" data-item-name="Shopper von COACH"
-            data-item-price="349.90" data-item-url="/" data-item-description="25% für 100 Tag, Restlichen 75% danach">
+            data-item-price="87.50" data-item-url="/luxury-redefined" data-item-description="Schöne Tasche"
+            data-item-custom1-name="Behaltepreise nach 100 Tagen zusätzlich" data-item-custom1-value="CHF 262.50">
             Ausleihen für 100 Tage
           </button>
         </div>
         <div class="col-lg-4">
           <img class="bag-img" src="https://www.globus.ch/media/shop/1614815/1528292452000?v=gallery&width=600" alt="Shopper Coach Abbildung">
           <h3>Beuteltasche von FURLA</h3>
-          <p>CHF 359.90</p>
+          <p>CHF 90.-</p>
           <p>Size: One size</p>
           <p>Farbe: hellblau</p>
           <button class="snipcart-add-item btn btn-primary " data-item-id="3" data-item-name="Beuteltasche von FURLA"
-            data-item-price="359.90" data-item-url="/" data-item-description="25% für 100 Tag, Restlichen 75% danach">
+            data-item-price="90" data-item-url="/luxury-redefined" data-item-description="Schöne Tasche"
+            data-item-custom1-name="Behaltepreise nach 100 Tagen zusätzlich" data-item-custom1-value="CHF 269.90">
             Ausleihen für 100 Tage
           </button>
         </div>
         <div class="col-lg-4">
           <img class="bag-img" src="https://www.globus.ch/media/shop/1790827/1535444992000?v=gallery&width=600" alt="Shopper Coach Abbildung">
           <h3>Rucksack von Karl Lagerfeld</h3>
-          <p>CHF 379.90</p>
+          <p>CHF 95.-</p>
           <p>Size: One size</p>
           <p>Farbe: schwarz</p>
           <button class="snipcart-add-item btn btn-primary " data-item-id="4" data-item-name="Rucksack von Karl Lagerfeld"
-            data-item-price="379.90" data-item-url="/" data-item-description="25% für 100 Tag, Restlichen 75% danach">
+            data-item-price="95" data-item-url="/luxury-redefined" data-item-description="Schöne Tasche"
+            data-item-custom1-name="Behaltepreise nach 100 Tagen zusätzlich" data-item-custom1-value="CHF 284.90">
             Ausleihen für 100 Tage
           </button>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -429,7 +434,6 @@
     </div>
   </div>
 
-
   <!-- Bootstrap core JavaScript -->
   <script src="/vendor/jquery/jquery.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -447,6 +451,35 @@
   <!-- Snipcart Webshop Plugin -->
   <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="YzdiMjc4MDctNDc3Yy00NWRhLWFlOWEtZjBlZTQ4MTI0ODY1NjM2NzU4MTcwNzI0MTI4Njcy"></script>
   <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+
+  <script id="cart-content-text" type="text/template">
+    <div class="custom-snipcart-footer-text">
+      <h2>Wie funktioniert die Zahlung?</h2>
+      <p>Du kriegst eine erste Rechnung gleich nach der Bestellung. Für alle Artikel die du nicht innerhalb 100 Tagen retournierst, kriegst du nach Ablauf der 100 Tage eine zweite Rechnung für die restlichen 75%. Jetzt gehören die Artikel dir! Alles ohne Zinsen oder versteckte Kosten.
+      </p>
+    </div>
+  </script>
+
+  <script>
+    Snipcart.subscribe('cart.opened', function () {
+      var html = $('#cart-content-text').html();
+      $(html).insertBefore($('#snipcart-footer'));
+    });
+    Snipcart.subscribe('page.changed', function () {
+
+      $('#snipcart_custom_Behaltepreise-nach-100-Tagen-zusatzlich').prop('disabled', true)
+
+      $("th.snip-table__cell--right").filter(function () {
+        return $(this).text() == "Gesamtpreis";
+      }).text('Ausleihpreis für 100 Tage');
+
+      $("h2.snip-static__title").filter(function () {
+        return $(this).text() == "Summe";
+      }).text('Summe für 100 Tage (erste Rechnung)');
+    });
+
+  </script>
+
 
 </body>
 
