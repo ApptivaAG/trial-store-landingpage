@@ -452,14 +452,19 @@
   <!-- Snipcart Webshop Plugin -->
   <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="YzdiMjc4MDctNDc3Yy00NWRhLWFlOWEtZjBlZTQ4MTI0ODY1NjM2NzU4MTcwNzI0MTI4Njcy"></script>
   <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="/locale/de.js"></script>
 
   <script id="cart-content-text" type="text/template">
     <div class="custom-snipcart-footer-text">
       <h2>* So einfach funktioniert die Bezahlung</h2>
       <p>Für jedes ausgewählte Produkt bezahlst du die ersten 100 Tage eine einmalige Ausleihgebühr von 25% des Originalpreises. 
-        Diesen Betrag zahlst du bequem per Rechnung. 
+          Diesen Betrag zahlst du bequem per Rechnung. 
+      </p>
+      <p>
         Die Ausleihphase beginnt, sobald du das Produkt erhältst. 
         In dieser Zeit kannst du den Artikel ausgiebig testen. 
+      </p>
+      <p>
         Wenn du das Produkt nach Ablauf der 100 Tage weiterhin behältst, bekommst du automatisch eine zweite und letzte Rechnung über die restlichen 75% des Originalpreises. 
         Mit der Überweisung gehört der Artikel dir. 
         Keine versteckten Kosten, keine Zinsen, kein Risiko.
@@ -478,19 +483,7 @@
 
       $('#snipcart_custom_75-nach-100-Tagen').prop('disabled', true)
 
-      $("th.snip-table__cell--right").filter(function () {
-        return $(this).text() == "Stückpreis";
-      }).text('25% für 100 Tage');
-
-      $("th.snip-table__cell--right").filter(function () {
-        return $(this).text() == "Gesamtpreis";
-      }).text('Positionssumme');
-
-      $("h2.snip-static__title").filter(function () {
-        return $(this).text() == "Summe";
-      }).text('Summe für 100 Tage (erste Rechnung)');
     });
-
   </script>
 </body>
 
