@@ -58,6 +58,7 @@ section h3 {
 section blockquote {
   font-size: 2em;
   font-weight: 300;
+  line-height: 1.3;
 }
 
 @media (min-width: 768px) {
@@ -68,6 +69,12 @@ section blockquote {
 
 section p {
   color: #666;
+}
+
+section p.section-heading {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section small {
@@ -518,6 +525,19 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #howitworks #steps .col-md-4 {
   padding-left: 2em;
   padding-right: 2em;
+}
+
+#teaser blockquote {
+  font-size: 2.8em;
+}
+
+#teaser img {
+  width: 100%;
+  margin-top: 2.4em;
+}
+
+#teaser .bag-teaser {
+  margin-top: 7em;
 }
 
 div[data-for="province"],
