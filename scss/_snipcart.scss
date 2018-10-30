@@ -1,28 +1,51 @@
-div[data-for="province"],
-div[data-for="address2"] {
-  display: none;
+div[data-for='province'],
+div[data-for='address2'] {
+    display: none;
 }
-
-#snipcart_custom_75-nach-100-Tagen {
-  border: none;
-  padding: 0;
-  font-weight: 600;
-  color: gray;
+.snip-layout {
+    font-family: Lato !important;
 }
 
 #snipcart-main-content {
-  .custom-snipcart-footer-text {
-    padding: 1em;
-    h2 {
-      font-size: 2em;
-      color: darkred;
-      margin-bottom: 0.5em;
+    .snip-header__title {
+        font-size: 2.5em;
+        font-weight: 400;
+        text-transform: none;
+        left: 0.5em;
     }
+    #snipcart-items {
+        .snip-table__header {
+            font-size: 1em;
+            font-weight: 700;
+            text-transform: none;
+            color: $gray;
+            background: $gray-200;
+        }
+        #snipcart-items-list {
+            border-top: none;
+        }
+        .snip-product__name {
+            text-transform: none;
+        }
 
-    p {
-      font-size: 1.2em;
-      color: #333;
-      margin-bottom: 1em;
+        #snipcart_custom_75-nach-100-Tagen {
+            border: none;
+            padding: 0;
+        }
     }
-  }
+    .custom-snipcart-footer-text {
+        background: $gray-bg;
+        padding: 3em 1.4em 1em;
+        h2 {
+            font-weight: 700;
+            margin-bottom: 1.5em;
+            color: $gray-600;
+        }
+
+        p {
+            line-height: 1.8;
+            color: $gray-600;
+            margin-bottom: 1.5em;
+        }
+    }
 }
