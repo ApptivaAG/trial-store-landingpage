@@ -1,110 +1,119 @@
 // Styling for the navbar
 #mainNav {
-  background-color: $gray-900;
-  .navbar-toggler {
-    font-size: 12px;
-    right: 0;
-    padding: 13px;
-    text-transform: uppercase;
-    color: white;
-    border: 0;
-    background-color: $primary;
-    @include heading-font;
-  }
-  .navbar-brand {
-    color: $primary;
-    background-color: black;
-    padding: 1rem;
-    margin-right: auto;
-    @include heading-font;
-    &.active,
-    &:active,
-    &:focus,
-    &:hover {
-      color: $white;
+    background-color: $gray-900;
+    .container {
+        display: grid;
+        grid: auto / 1fr 1fr;
     }
-    .trialstore {
-      color: white;
-      text-transform: uppercase;
+    .navbar-toggler {
+        font-size: 12px;
+        right: 0;
+        padding: 13px;
+        text-transform: uppercase;
+        color: white;
+        border: 0;
+        background-color: $primary;
+        @include heading-font;
     }
-    .subline {
-      color: white;
-      font-size: 40%;
+    .navbar-brand {
+        grid-row: 1 / 5;
+        color: $primary;
+        background-color: black;
+        padding: 1rem;
+        margin-right: auto;
+        @include heading-font;
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            color: $white;
+        }
+        .trialstore {
+            color: white;
+            text-transform: uppercase;
+        }
+        .subline {
+            color: white;
+            font-size: 40%;
+        }
     }
-  }
-  .nav-locations {
-    display: none;
-    text-decoration: none;
-    color: white;
-    @include heading-font;
-    padding: 20px 0px;
-    &.active,
-    &:hover {
-      color: $white;
-    }
-  }
-  .navbar-nav {
-    .nav-item {
-      .nav-link {
-        font-size: 90%;
-        font-weight: 400;
-        padding: 0.75em 0;
-        letter-spacing: 1px;
+    .nav-locations {
+        justify-self: end;
+        font-size: 0.6em;
+        text-decoration: none;
         color: white;
         @include heading-font;
         &.active,
         &:hover {
-          color: $white;
+            color: $white;
         }
-      }
-    }
-  }
-}
-@media (min-width: 992px) {
-  #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
-    border: none;
-    background-color: transparent;
-    .navbar-brand {
-      font-size: 1.5em;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-    }
-    .nav-locations {
-      display: block;
-      color: $gray-900;
-      padding: 0 0.5em;
-    }
-    .nav-locations + .nav-locations {
-      border-left: 2px solid $gray-600;
     }
     .navbar-nav {
-      .nav-item {
-        .nav-link {
-          padding: 1.1em 1em !important;
+        .nav-item {
+            .nav-link {
+                font-size: 90%;
+                font-weight: 400;
+                padding: 0.75em 0;
+                letter-spacing: 1px;
+                color: white;
+                @include heading-font;
+                &.active,
+                &:hover {
+                    color: $white;
+                }
+            }
         }
-      }
     }
-    &.navbar-shrink {
-      padding-top: 5px;
-      padding-bottom: 4px;
-      background-color: black;
-      .nav-locations {
-        color: $secondary;
-        &.active,
-        &:hover {
-          color: $white;
+}
+@media (min-width: 992px) {
+    #mainNav {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+        -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+        transition: padding-top 0.3s, padding-bottom 0.3s;
+        border: none;
+        background-color: transparent;
+        .container {
+            display: flex;
         }
-      }
-      .navbar-brand {
-        font-size: 1.25em;
-        padding: 12px 20px;
-      }
+        .navbar-brand {
+            font-size: 1.5em;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .nav-locations {
+            display: block;
+            font-size: 1em;
+            color: $gray-900;
+            padding: 0 0.5em;
+        }
+        .nav-locations + .nav-locations {
+            border-left: 2px solid $gray-600;
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    padding: 1.1em 1em !important;
+                }
+            }
+        }
+        &.navbar-shrink {
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: black;
+            .nav-locations {
+                color: $secondary;
+                &.active,
+                &:hover {
+                    color: $white;
+                }
+            }
+            .navbar-brand {
+                font-size: 1.25em;
+                padding: 12px 20px;
+            }
+        }
     }
-  }
 }

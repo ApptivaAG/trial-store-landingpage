@@ -1,26 +1,26 @@
 // Global styling for this template
 html {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 body {
-  overflow-x: hidden;
-  @include body-font;
+    overflow-x: hidden;
+    @include body-font;
 }
 
 p {
-  line-height: 1.75;
+    line-height: 1.75;
 }
 
 a {
-  color: $primary;
-  &:hover {
-    color: darken($primary, 10%);
-  }
+    color: $primary;
+    &:hover {
+        color: darken($primary, 10%);
+    }
 }
 
 .text-primary {
-  color: $primary !important;
+    color: $primary !important;
 }
 
 h1,
@@ -29,98 +29,99 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  @include heading-font;
+    font-weight: 700;
+    @include heading-font;
 }
 
 section {
-  padding: 100px 0;
+    padding: 100px 0;
 
-  h2.section-heading {
-    font-weight: 300;
-    font-size: 1.5em;
-    color: $secondary;
-    margin: 0;
-  }
-
-  h3 {
-    color: $gray;
-    font-size: 1em;
-    margin-top: 1.2em;
-  }
-
-  blockquote {
-    font-size: 2em;
-    font-weight: 300;
-    line-height: 1.3;
-  }
-
-  @media (min-width: 768px) {
-    blockquote {
-      font-size: 3em;
+    h2.section-heading {
+        font-weight: 300;
+        font-size: 1.5em;
+        color: $secondary;
+        margin: 0;
     }
-  }
 
-  p {
-    color: $gray;
-  }
+    h3 {
+        color: $gray;
+        font-size: 1em;
+        margin-top: 1.2em;
+    }
 
-  p.section-heading {
-    max-width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    blockquote {
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 1.3;
+    }
 
-  small {
-    font-size: 0.65em;
-  }
+    @media (min-width: 768px) {
+        blockquote {
+            font-size: 3em;
+        }
+    }
+
+    p {
+        color: $gray;
+    }
+
+    p.section-heading {
+        max-width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    small {
+        font-size: 0.65em;
+    }
 }
 
 // Button Styles
 .btn {
-  @include heading-font;
-  font-weight: 500;
-  border-radius: 0;
-  color: $secondary;
-  text-transform: uppercase;
+    @include heading-font;
+    font-weight: 500;
+    border-radius: 0;
+    color: $secondary;
+    text-transform: uppercase;
+    white-space: normal;
 }
 
 .btn-xl {
-  font-size: 1.3em;
-  padding: 0.6em 1em;
+    font-size: 1.3em;
+    padding: 0.6em 1em;
 }
 
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: darken($primary, 7.5%) !important;
-    border-color: darken($primary, 7.5%) !important;
-    color: white;
-  }
-  &:active,
-  &:focus {
-    box-shadow: 0 0 0 0.2rem $secondary !important;
-  }
+    background-color: $primary;
+    border-color: $primary;
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: darken($primary, 7.5%) !important;
+        border-color: darken($primary, 7.5%) !important;
+        color: white;
+    }
+    &:active,
+    &:focus {
+        box-shadow: 0 0 0 0.2rem $secondary !important;
+    }
 }
 
 // Highlight color customization
 ::-moz-selection {
-  background: $primary;
-  text-shadow: none;
+    background: $primary;
+    text-shadow: none;
 }
 
 ::selection {
-  background: $primary;
-  text-shadow: none;
+    background: $primary;
+    text-shadow: none;
 }
 
 img::selection {
-  background: transparent;
+    background: transparent;
 }
 
 img::-moz-selection {
-  background: transparent;
+    background: transparent;
 }
