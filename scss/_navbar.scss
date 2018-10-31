@@ -3,7 +3,7 @@
     background-color: $gray-900;
     .container {
         display: grid;
-        grid: auto / 1fr 1fr;
+        grid: repeat(3, auto) / auto;
     }
     .navbar-toggler {
         font-size: 12px;
@@ -16,7 +16,7 @@
         @include heading-font;
     }
     .navbar-brand {
-        grid-row: 1 / 5;
+        grid-row: 1 / -1;
         color: $primary;
         background-color: black;
         padding: 1rem;
@@ -38,6 +38,7 @@
         }
     }
     .nav-locations {
+        grid-column: 2;
         justify-self: end;
         font-size: 0.6em;
         text-decoration: none;

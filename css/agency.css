@@ -134,7 +134,7 @@ img::-moz-selection {
 
 #mainNav .container {
   display: grid;
-  grid: auto / 1fr 1fr;
+  grid: repeat(3, auto)/auto;
 }
 
 #mainNav .navbar-toggler {
@@ -149,7 +149,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  grid-row: 1 / 5;
+  grid-row: 1 / -1;
   color: black;
   background-color: black;
   padding: 1rem;
@@ -172,6 +172,7 @@ img::-moz-selection {
 }
 
 #mainNav .nav-locations {
+  grid-column: 2;
   justify-self: end;
   font-size: 0.6em;
   text-decoration: none;
