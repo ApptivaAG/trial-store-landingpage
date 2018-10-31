@@ -132,6 +132,11 @@ img::-moz-selection {
   background-color: #212529;
 }
 
+#mainNav .container {
+  display: grid;
+  grid: auto / 1fr 1fr;
+}
+
 #mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;
@@ -144,6 +149,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
+  grid-row: 1 / 5;
   color: black;
   background-color: black;
   padding: 1rem;
@@ -166,11 +172,11 @@ img::-moz-selection {
 }
 
 #mainNav .nav-locations {
-  display: none;
+  justify-self: end;
+  font-size: 0.6em;
   text-decoration: none;
   color: white;
   font-family: "Lato", Arial, sans-serif;
-  padding: 20px 0px;
 }
 
 #mainNav .nav-locations.active, #mainNav .nav-locations:hover {
@@ -200,6 +206,9 @@ img::-moz-selection {
     border: none;
     background-color: transparent;
   }
+  #mainNav .container {
+    display: flex;
+  }
   #mainNav .navbar-brand {
     font-size: 1.5em;
     -webkit-transition: all 0.3s;
@@ -208,6 +217,7 @@ img::-moz-selection {
   }
   #mainNav .nav-locations {
     display: block;
+    font-size: 1em;
     color: #212529;
     padding: 0 0.5em;
   }
