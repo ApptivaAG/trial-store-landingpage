@@ -2,10 +2,12 @@ div[data-for='province'],
 div[data-for='address2'] {
     display: none;
 }
-.snip-layout {
-    font-family: Lato !important;
+#snipcart-bill-me-later {
+    color: white;
 }
-
+a:not([href]):not([tabindex]).snip-btn {
+    color: black;
+}
 #snipcart-main-content {
     .snip-header__title {
         font-size: 2.5em;
