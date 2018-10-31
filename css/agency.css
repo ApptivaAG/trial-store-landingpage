@@ -87,6 +87,7 @@ section small {
   border-radius: 0;
   color: #9f8f68;
   text-transform: uppercase;
+  white-space: normal;
 }
 
 .btn-xl {
@@ -257,7 +258,7 @@ header.masthead img {
   color: #212529;
 }
 
-#locations [class*="js-location-"] {
+#locations [class*='js-location-'] {
   margin-bottom: 2em;
 }
 
@@ -272,7 +273,8 @@ header.masthead img {
 #locations img {
   width: 100%;
   max-width: 14em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  margin-top: 2em;
 }
 
 footer {
