@@ -3,9 +3,13 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
+html {
+  font-size: 18px;
+}
+
 body {
   overflow-x: hidden;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 p {
@@ -31,7 +35,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 section {
@@ -39,36 +43,55 @@ section {
 }
 
 section h2.section-heading {
-  font-size: 30px;
-  margin-top: 0;
-  margin-bottom: 2em;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #9f8f68;
+  margin: 0;
+}
+
+section h3 {
+  color: #666;
+  font-size: 1em;
+  margin-top: 1.2em;
+}
+
+section blockquote {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.3;
 }
 
 @media (min-width: 768px) {
-  section h2.section-heading {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 2em;
+  section blockquote {
+    font-size: 3em;
   }
 }
 
-section h3.section-subheading {
-  font-size: 16px;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 75px;
-  text-transform: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+section p {
+  color: #666;
+}
+
+section p.section-heading {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section small {
+  font-size: 0.65em;
 }
 
 .btn {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 500;
+  border-radius: 0;
+  color: #9f8f68;
+  text-transform: uppercase;
 }
 
 .btn-xl {
-  font-size: 18px;
-  padding: 20px;
+  font-size: 1.3em;
+  padding: 0.6em 1em;
 }
 
 .btn-primary {
@@ -83,7 +106,7 @@ section h3.section-subheading {
 }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem #9f8f68 !important;
 }
 
 ::-moz-selection {
@@ -116,18 +139,19 @@ img::-moz-selection {
   color: white;
   border: 0;
   background-color: black;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
   color: black;
   background-color: black;
   padding: 1rem;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-right: auto;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: black;
+  color: #fff;
 }
 
 #mainNav .navbar-brand .trialstore {
@@ -141,10 +165,15 @@ img::-moz-selection {
 }
 
 #mainNav .nav-locations {
+  display: none;
   text-decoration: none;
   color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   padding: 20px 0px;
+}
+
+#mainNav .nav-locations.active, #mainNav .nav-locations:hover {
+  color: #fff;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -153,11 +182,11 @@ img::-moz-selection {
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: black;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -171,13 +200,18 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    font-size: 1.75em;
+    font-size: 1.5em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
   #mainNav .nav-locations {
+    display: block;
     color: #212529;
+    padding: 0 0.5em;
+  }
+  #mainNav .nav-locations + .nav-locations {
+    border-left: 2px solid #868e96;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em 1em !important;
@@ -188,7 +222,10 @@ img::-moz-selection {
     background-color: black;
   }
   #mainNav.navbar-shrink .nav-locations {
-    color: white;
+    color: #9f8f68;
+  }
+  #mainNav.navbar-shrink .nav-locations.active, #mainNav.navbar-shrink .nav-locations:hover {
+    color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -215,19 +252,6 @@ header.masthead img {
   }
 }
 
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
-}
-
-@media (min-width: 768px) {
-  #steps {
-    background-image: url("../img/dash.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-  }
-}
-
 #faq {
   background-color: #e9ecef;
   color: #212529;
@@ -245,9 +269,15 @@ header.masthead img {
   text-align: center;
 }
 
+#locations img {
+  width: 100%;
+  max-width: 14em;
+  margin-bottom: 2em;
+}
+
 footer {
-  background-color: #212529;
-  color: #f8f9fa;
+  background-color: #9f8f68;
+  color: #fff;
   padding: 25px 0;
   text-align: center;
 }
@@ -256,7 +286,7 @@ footer span.copyright {
   font-size: 90%;
   line-height: 40px;
   text-transform: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 footer ul.quicklinks {
@@ -264,7 +294,7 @@ footer ul.quicklinks {
   line-height: 40px;
   margin-bottom: 0;
   text-transform: none;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 ul.social-buttons {
@@ -317,7 +347,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
 }
 
 .impressum-modal .modal-content ul.list-inline {
@@ -385,6 +415,185 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   color: #d10000;
 }
 
-#newsletter label {
+#lab img {
   width: 100%;
+}
+
+#newsletter {
+  background: center/cover no-repeat url(/img/newletter-bg.jpg);
+}
+
+#newsletter blockquote,
+#newsletter p {
+  color: #fff;
+}
+
+#newsletter-form {
+  position: relative;
+}
+
+#newsletter-form input {
+  border: none;
+  padding: 2em 0;
+}
+
+#newsletter-form input::placeholder {
+  color: #9f8f68;
+  font-size: 1.2em;
+}
+
+#newsletter-form input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  #newsletter-form input {
+    border-bottom: 2px solid #9f8f68;
+    border-radius: 0;
+  }
+}
+
+#newsletter-form button {
+  font-size: 1.2em;
+  width: 100%;
+  height: 100%;
+}
+
+#newsletter-form button svg {
+  height: 1em;
+  width: 2em;
+  margin-left: 1em;
+  stroke: currentColor;
+}
+
+@media (max-width: 991px) {
+  #newsletter-form button {
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  #newsletter-form button {
+    text-align: right;
+  }
+  #newsletter-form button:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(100% - 1em);
+    height: 100%;
+    width: 30em;
+    background-color: black;
+  }
+}
+
+@media (max-width: 991px) {
+  #newsletter-form .col-lg-6 {
+    margin-bottom: 2em;
+  }
+}
+
+.bag-img {
+  width: 100%;
+}
+
+#product-list h3 {
+  margin-bottom: 1em;
+}
+
+#product-list p {
+  line-height: 1;
+}
+
+#product-list button {
+  margin-top: 1em;
+}
+
+#product-list div {
+  margin: 3em 0;
+  padding: 0 3em;
+}
+
+#howitworks img {
+  width: 11em;
+  height: 10em;
+  padding: 2em;
+}
+
+#howitworks #steps .col-md-4 {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#teaser blockquote {
+  font-size: 2.8em;
+}
+
+#teaser img {
+  width: 100%;
+  margin-top: 2.4em;
+}
+
+#teaser .bag-teaser {
+  margin-top: 7em;
+}
+
+div[data-for='province'],
+div[data-for='address2'] {
+  display: none;
+}
+
+#snipcart-bill-me-later {
+  color: white;
+}
+
+a:not([href]):not([tabindex]).snip-btn {
+  color: black;
+}
+
+#snipcart-main-content .snip-header__title {
+  font-size: 2.5em;
+  font-weight: 400;
+  text-transform: none;
+  left: 0.5em;
+}
+
+#snipcart-main-content #snipcart-items .snip-table__header {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: none;
+  color: #666;
+  background: #e9ecef;
+}
+
+#snipcart-main-content #snipcart-items #snipcart-items-list {
+  border-top: none;
+}
+
+#snipcart-main-content #snipcart-items .snip-product__name {
+  text-transform: none;
+}
+
+#snipcart-main-content #snipcart-items #snipcart_custom_75-nach-100-Tagen {
+  border: none;
+  padding: 0;
+}
+
+#snipcart-main-content .custom-snipcart-footer-text {
+  background: #f8f9fa;
+  padding: 3em 1.4em 1em;
+}
+
+#snipcart-main-content .custom-snipcart-footer-text h2 {
+  font-weight: 700;
+  margin-bottom: 1.5em;
+  color: #868e96;
+}
+
+#snipcart-main-content .custom-snipcart-footer-text p {
+  line-height: 1.8;
+  color: #868e96;
+  margin-bottom: 1.5em;
 }
