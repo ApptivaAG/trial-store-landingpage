@@ -129,7 +129,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #212529;
+  background-color: #000;
 }
 
 #mainNav .container {
@@ -199,13 +199,13 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 4px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: black;
   }
   #mainNav .container {
     display: flex;
@@ -219,7 +219,7 @@ img::-moz-selection {
   #mainNav .nav-locations {
     display: block;
     font-size: 1em;
-    color: #212529;
+    color: #9f8f68;
     padding: 0 0.5em;
   }
   #mainNav .nav-locations + .nav-locations {
@@ -260,7 +260,7 @@ header.masthead img {
 
 @media (min-width: 992px) {
   header.masthead {
-    margin-top: 0px;
+    margin-top: 5em;
   }
 }
 
