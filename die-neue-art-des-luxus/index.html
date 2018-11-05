@@ -626,6 +626,9 @@
             <li class="list-inline-item">
               <a data-toggle="modal" data-target="#impressumModal">Impressum</a>
             </li>
+            <li class="list-inline-item">
+              <a data-toggle="modal" data-target="#agbsModal">Allgemeine Geschäftsbedingungen</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -661,6 +664,94 @@
       </div>
     </div>
   </div>
+  <!-- AGBs -->
+  <div class="agbs-modal modal fade" id="agbsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="modal-body">
+            <h2>
+              Trial Store Allgemeine Geschäftsbedingungen
+            </h2>
+            <h3>
+              Allgemein
+            </h3>
+            <p>
+              Im Rahmen dieser Vereinbarung bist Du berechtigt, am Gültigkeitstag Wareneinkäufe bis zu dem von der
+              Filiale bewilligten Kaufbetrag gegen Rechnung zu tätigen. Personalrabatte und Bestellungen sind vom Trial
+              Store-Angebot ausgeschlossen.
+            </p>
+            <h3>
+              Fakturierung
+            </h3>
+            <p>
+              Entsprechend den vereinbarten Trial Store-Kondition werden die getätigten Trial Store-Käufe
+              fakturiert. Zahlungen, Warenbezüge und Retouren, die sich mit den Abrechnungen kreuzen, werden auf einer
+              weiteren, nachfolgenden Rechnung (Kontoauszug) berücksichtigt. Sofern unsere Abrechnungen nicht innert 2
+              Wochen ab Rechnungsdatum beanstandet werden, gilt der ausgewiesene Saldo als genehmigt.
+            </p>
+            <h3>
+              Retouren
+            </h3>
+            <p>
+              Trial Store-Käufe können innerhalb der Laufzeit der Trial Store-Kondition NUR in einer der genannten
+              Filialen retourniert werden. Ausser den bisher verrechneten Kosten entstehen bei Retouren innerhalb der
+              Laufzeit für den Kunden keine weiteren Kosten. Jede angebrochene Zeiteinheit (Monat oder Tag) wird als
+              ganze Einheit verrechnet.
+              Verrechnete Zeiteinheiten werden nicht zurückerstattet. Allfällige Rückerstattungen (entsprechend Trial
+              Store-Konditionen) werden auf das jeweilige Kundenkonto per Bank/Postüberweisung getätigt (IBAN
+              Zwingend).
+            </p>
+            <h3>
+              Bonus
+            </h3>
+            <p>
+              Trial Store-Käufe können nicht mit der PlusCard bezahlt werden. Entsprechend besteht für den Kunden
+              kein Anspruch auf Bonus-Punkte.
+            </p>
+            <h3>
+              Zahlung
+            </h3>
+            <p>
+              Unsere Rechnungen sind bei Erhalt fällig und vollständig (ohne jegliche Abzüge) innert 20 Tag ab
+              Rechnungsdatum zahlbar.
+            </p>
+            <h3>
+              Trial Store-Kondition
+            </h3>
+            <p>
+              Der Artikel wird für 25 % des Verkaufspreises für 100 Tag ausgeliehen. Retournieren Sie den Artikel
+              innerhalb der 100 Tage, entstehen keine weiteren Kosten. Behalten Sie die Ware länger als 100 Tage,
+              verrechnen wir Ihnen die restlichen 75 % und die Ware gehört Ihnen.
+            </p>
+            <h3>
+              Gerichtsstand
+            </h3>
+            <p>
+              Dieser Vertrag untersteht dem schweizerischen Recht.
+              Mit der Bestellung bestätigst Du die Richtigkeit der gemachten Angaben, dass Du in geordneten
+              finanziellen Verhältnissen lebst und zum Abschluss dieses Vertrags berechtigt bist (nicht minderjährig,
+              nicht bevormundet). Ebenfalls anerkennst Du den Kaufbetrag und erklärst dich mit den aufgeführten
+              Bedingungen einverstanden. Du ermächtigst die Firma Magazine zum Globus AG sämtliche für die Prüfung
+              dieses Vertrages erforderlichen Auskünfte bei Ämtern, Auskunfteien und der Zentralstelle für
+              Kreditinformationen (ZEK) einzuholen.ges erforderlichen Auskünfte bei Ämtern, Auskunfteien und der
+              Zentralstelle für Kreditinformationen (ZEK) einzuholen.ges erforderlichen Auskünfte bei Ämtern,
+              Auskunfteien und der Zentralstelle für Kreditinformationen (ZEK) einzuholen.
+            </p>
+            <button class="btn btn-primary" data-dismiss="modal" type="button">
+              <i class="fa fa-times"></i>
+              Schliessen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="/vendor/jquery/jquery.min.js"></script>
@@ -677,7 +768,9 @@
   <script src="/js/agency.min.js"></script>
 
   <!-- Snipcart Webshop Plugin -->
-  <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="YzAwODQyZjgtODMzNi00NWZjLTljOGYtODY1NGJmY2M4ZGYzNjM2NzU4MTcwNzI0MTI4Njcy"></script>
+  <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="YzAwODQyZjgtODMzNi00NWZjLTljOGYtODY1NGJmY2M4ZGYzNjM2NzU4MTcwNzI0MTI4Njcy"
+    data-cart-custom1-name="Jahrgang" data-cart-custom1-required="true" data-cart-custom2-name="Allgemeine Geschäftsbedingungen akzeptieren"
+    data-cart-custom2-options="true|false" data-cart-custom2-required="true" type="text/javascript"></script>
   <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
   <script type="text/javascript" src="/locale/de.js"></script>
 
@@ -696,6 +789,7 @@
         Mit der Überweisung gehört der Artikel dir. 
         Keine versteckten Kosten, keine Zinsen, kein Risiko.
       </p>
+      <a data-toggle="modal" data-target="#agbsModal">Allgemeine Geschäftsbedingungen</a>
     </div>
   </script>
 
@@ -710,6 +804,18 @@
 
       $("td.snip-customfields input[type='text']").prop('disabled', true)
 
+    });
+    Snipcart.subscribe('page.validating', function (ev, data) {
+      if (ev.type === 'order-infos') {
+
+        var regex = /^\d{4}$/;
+        if (!regex.test(data[0].value) || data[0].value < 1900) {
+          ev.addError('Jahrgang', 'Bitte eine gültiges Geburtsjahr eingeben.');
+        }
+        if (data[0].value > 1999) {
+          ev.addError('Jahrgang', 'Mit einem Jahrgang jünger als 1999 darf leider nicht bestellt werden. Siehe AGBs.');
+        }
+      }
     });
   </script>
 </body>
