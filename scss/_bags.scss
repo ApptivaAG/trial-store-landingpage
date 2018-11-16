@@ -11,6 +11,28 @@
     line-height: 1;
   }
 
+  ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: block;
+      height: 1em;
+      width: 1em;
+      background-color: currentColor;
+      cursor: pointer;
+
+      &.selected {
+        border: 2px solid #111;
+      }
+    }
+
+    li + li {
+      margin-left: 1em;
+    }
+  }
+
   button {
     margin-top: 1em;
   }
@@ -18,5 +40,9 @@
   div {
     margin: 3em 0;
     padding: 0 3em;
+  }
+
+  .hidden {
+    display: none;
   }
 }

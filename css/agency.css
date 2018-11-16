@@ -605,6 +605,28 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   line-height: 1;
 }
 
+#product-list ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+#product-list ul li {
+  display: block;
+  height: 1em;
+  width: 1em;
+  background-color: currentColor;
+  cursor: pointer;
+}
+
+#product-list ul li.selected {
+  border: 2px solid #111;
+}
+
+#product-list ul li + li {
+  margin-left: 1em;
+}
+
 #product-list button {
   margin-top: 1em;
 }
@@ -612,6 +634,10 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #product-list div {
   margin: 3em 0;
   padding: 0 3em;
+}
+
+#product-list .hidden {
+  display: none;
 }
 
 #howitworks img {
