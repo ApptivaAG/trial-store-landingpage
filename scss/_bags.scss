@@ -1,15 +1,18 @@
-.bag-img {
-  width: 100%;
-}
+#bags {
+    .bag-img {
+        width: 100%;
+    }
 
-#product-list {
-  h3 {
-    margin-bottom: 1em;
-  }
+    .info-text {
+        font-size: 0.8em;
+        margin: 3em 0 0;
+        text-align: center;
+    }
 
-  p {
-    line-height: 1;
-  }
+    #product-list {
+        h3 {
+            margin-bottom: 1em;
+        }
 
   button {
     margin-top: 1em;

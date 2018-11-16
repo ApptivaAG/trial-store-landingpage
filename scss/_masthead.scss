@@ -1,18 +1,27 @@
 // Styling for the masthead
 header.masthead {
-  position: relative;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  margin-top: 5em;
-  img {
-    width: 100vw;
-  }
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    margin-top: 5em;
+    img {
+        width: 100vw;
+    }
+
+    .header-button {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: 40%;
+    }
 }
 
 @media (min-width: 992px) {
-  header.masthead {
-    margin-top: 5em;
-  }
+    header.masthead {
+        margin-top: 5em;
+    }
 }

@@ -258,6 +258,15 @@ header.masthead img {
   width: 100vw;
 }
 
+header.masthead .header-button {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 40%;
+}
+
 @media (min-width: 992px) {
   header.masthead {
     margin-top: 5em;
@@ -593,15 +602,21 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
 }
 
-.bag-img {
+#bags .bag-img {
   width: 100%;
 }
 
-#product-list h3 {
+#bags .info-text {
+  font-size: 0.8em;
+  margin: 3em 0 0;
+  text-align: center;
+}
+
+#bags #product-list h3 {
   margin-bottom: 1em;
 }
 
-#product-list p {
+#bags #product-list p {
   line-height: 1;
 }
 
@@ -609,7 +624,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-top: 1em;
 }
 
-#product-list div {
+#bags #product-list div {
   margin: 3em 0;
   padding: 0 3em;
 }
