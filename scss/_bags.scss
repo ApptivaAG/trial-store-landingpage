@@ -1,22 +1,30 @@
-.bag-img {
-  width: 100%;
-}
-
-#product-list {
-  h3 {
-    margin-bottom: 1em;
+#bags {
+  .bag-img {
+    width: 100%;
   }
 
-  p {
-    line-height: 1;
+  .info-text {
+    font-size: 0.8em;
+    margin: 3em 0 0;
+    text-align: center;
   }
 
-  button {
-    margin-top: 1em;
-  }
+  #product-list {
+    h3 {
+      margin-bottom: 1em;
+    }
 
-  div {
-    margin: 3em 0;
-    padding: 0 3em;
+    p {
+      line-height: 1;
+    }
+
+    button {
+      margin-top: 1em;
+    }
+
+    div {
+      margin: 3em 0;
+      padding: 0 3em;
+    }
   }
 }
