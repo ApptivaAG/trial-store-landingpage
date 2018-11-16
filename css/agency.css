@@ -605,8 +605,16 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   line-height: 1;
 }
 
-#product-list ul {
+#product-list .color {
   display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+#product-list ul {
+  display: inline-flex;
+  margin-left: 1em;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
 }
@@ -615,12 +623,14 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   display: block;
   height: 1em;
   width: 1em;
+  border: 1px solid #ced4da;
   background-color: currentColor;
   cursor: pointer;
 }
 
 #product-list ul li.selected {
-  border: 2px solid #111;
+  outline: 2px solid #111;
+  outline-offset: 1px;
 }
 
 #product-list ul li + li {
@@ -631,7 +641,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-top: 1em;
 }
 
-#product-list div {
+#product-list > div {
   margin: 3em 0;
   padding: 0 3em;
 }

@@ -11,8 +11,16 @@
     line-height: 1;
   }
 
-  ul {
+  .color {
     display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  ul {
+    display: inline-flex;
+    margin-left: 1em;
+    margin-bottom: 0;
     padding: 0;
     list-style: none;
 
@@ -20,11 +28,13 @@
       display: block;
       height: 1em;
       width: 1em;
+      border: 1px solid $gray-400;
       background-color: currentColor;
       cursor: pointer;
 
       &.selected {
-        border: 2px solid #111;
+        outline: 2px solid #111;
+        outline-offset: 1px;
       }
     }
 
@@ -37,7 +47,7 @@
     margin-top: 1em;
   }
 
-  div {
+  > div {
     margin: 3em 0;
     padding: 0 3em;
   }
