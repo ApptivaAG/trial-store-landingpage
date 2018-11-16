@@ -1,27 +1,41 @@
 // Styling for the masthead
 header.masthead {
-    position: relative;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    margin-top: 5em;
-    img {
-        width: 100vw;
-    }
+  position: relative;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  margin-top: 5em;
+  img {
+    width: 100vw;
+  }
 
-    .header-button {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 20%;
-        height: 40%;
+  .header-button {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 18vw;
+    height: 18vw;
+
+    .round-button {
+      display: flex;
+      align-items: center;
+      font-size: 2vw;
+      line-height: 1.2;
+      padding: 10%;
+      shape-outside: circle(50%);
+      height: 100%;
+      width: 100%;
+      color: $gray;
+      background-color: white;
+      border-radius: 50%;
+      box-shadow: 2px 2px 10px #2a2a2a33;
     }
+  }
 }
 
 @media (min-width: 992px) {
-    header.masthead {
-        margin-top: 5em;
-    }
+  header.masthead {
+    margin-top: 5em;
+  }
 }

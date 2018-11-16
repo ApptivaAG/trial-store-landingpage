@@ -259,12 +259,26 @@ header.masthead img {
 }
 
 header.masthead .header-button {
-  display: block;
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 20%;
-  height: 40%;
+  top: 1em;
+  right: 1em;
+  width: 18vw;
+  height: 18vw;
+}
+
+header.masthead .header-button .round-button {
+  display: flex;
+  align-items: center;
+  font-size: 2vw;
+  line-height: 1.2;
+  padding: 10%;
+  shape-outside: circle(50%);
+  height: 100%;
+  width: 100%;
+  color: #666;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px #2a2a2a33;
 }
 
 @media (min-width: 992px) {
@@ -620,7 +634,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   line-height: 1;
 }
 
-#product-list button {
+#bags #product-list button {
   margin-top: 1em;
 }
 
