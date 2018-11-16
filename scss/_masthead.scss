@@ -10,12 +10,23 @@ header.masthead {
     width: 100vw;
   }
 
+  a:hover {
+    text-decoration: none;
+    &.header-button {
+      top: 0.8em;
+      .round-button {
+        box-shadow: 2px 12px 20px #2a2a2a33;
+      }
+    }
+  }
+
   .header-button {
     position: absolute;
     top: 1em;
     right: 1em;
     width: 18vw;
     height: 18vw;
+    transition: top 100ms;
 
     .round-button {
       display: flex;
@@ -30,6 +41,7 @@ header.masthead {
       background-color: white;
       border-radius: 50%;
       box-shadow: 2px 2px 10px #2a2a2a33;
+      transition: box-shadow 100ms;
     }
   }
 }

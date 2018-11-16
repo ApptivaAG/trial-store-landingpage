@@ -258,12 +258,25 @@ header.masthead img {
   width: 100vw;
 }
 
+header.masthead a:hover {
+  text-decoration: none;
+}
+
+header.masthead a:hover.header-button {
+  top: 0.8em;
+}
+
+header.masthead a:hover.header-button .round-button {
+  box-shadow: 2px 12px 20px #2a2a2a33;
+}
+
 header.masthead .header-button {
   position: absolute;
   top: 1em;
   right: 1em;
   width: 18vw;
   height: 18vw;
+  transition: top 100ms;
 }
 
 header.masthead .header-button .round-button {
@@ -279,6 +292,7 @@ header.masthead .header-button .round-button {
   background-color: white;
   border-radius: 50%;
   box-shadow: 2px 2px 10px #2a2a2a33;
+  transition: box-shadow 100ms;
 }
 
 @media (min-width: 992px) {
